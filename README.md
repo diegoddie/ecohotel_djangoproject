@@ -1,6 +1,7 @@
 ### MY FIRST DJANGO PROJECT (USING A BLOCKCHAIN!)
 
 The goal of this project is to implement a system of tracking consumption and energy produced by a hotel with photovoltaic panels.
+To achieve this I will use Django, Redis (a NoSQL database) and a Ethereum blockchain testnet.
 
 The exercise requires to create a web application that shows, in table format, the amount of energy produced and consumed every day by the hotel. At each entry (corresponding to what happens in the previous 24 hours) I will need to start a transaction on Ethereum Ropsten containing the two values in the note field.
 
