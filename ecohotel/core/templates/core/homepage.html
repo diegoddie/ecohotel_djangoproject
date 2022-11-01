@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <section class="hero p-5">
+        <div class="container">
+            <div class="table-responsive" id="no-more-tables">
+                {% if request.user.is_authenticated %}
+                    <h3 class="pb-2">Energy Produced&Consumed per Day</h3>
+                    <table class="table bg-white">
+                        <thead class="bg-dark text-light">
+                            <tr>
+                                <th>Date</th>
+                                <th>Produced Energy in Watt</th>
+                                <th>Consumed Energy in Watt</th>
+                                <th>Tx Hash</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        {% for d in data %}
+                            <tr>     
+                                <td data-title="Date">{{d.date|date:'D d M Y'}}</td>
+                                <td data-title="Produced Energy in Watt">{{d.produced_energy}}</td>
+                                <td data-title="Consumed Energy in Watt">{{d.consumed_energy}}</td>
+                                <td data-title="Tx Hash">{{d.txId}}</td>
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                {% else %}
+                    <div class="col-md-8">
+                        <div class="text">
+                            Register or Log In to see the energy produced and consumed in the last 24 hours
+                        </div>
+                        <div class="buttons">
+                            <a href="{% url 'registration_view' %}" class="btn btn-primary">Register</a>
+                            <a href="{% url 'login' %}" class="btn btn-outline-secondary ms-4">Log In</a>
+                        </div>
+                    </div>
+                {% endif %}
+            </div>
+        </div>   
+    </section>
+{% endblock content %}

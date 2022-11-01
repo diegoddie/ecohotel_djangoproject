@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<section class="hero p-5">
+    <div class="container">
+        <div class="table-responsive" id="no-more-tables">
+            <h3 class="pb-2">Total Energy Produced&Consumed</h3>
+            <table class="table bg-white">
+                <thead class="bg-dark text-light">
+                    <tr>
+                        <th>Total Produced in Watt</th>
+                        <th>Total Consumed in Watt</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>     
+                        <td data-title="Total Produced in Watt">{{total_produced}}</td>
+                        <td data-title="Total Consumed in Watt">{{total_consumed}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>   
+</section>
+{% endblock content %}
