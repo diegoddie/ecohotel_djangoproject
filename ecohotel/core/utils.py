@@ -3,7 +3,6 @@ import os
 
 ADDRESS = "0xEcE60DE075DeAe8335a12caAE638935FBB2Eb3fb"
 P_KEY = os.environ.get("P_KEY")
-print(P_KEY)
 
 def sendTransactionAndGetTxId(message):
     w3 = Web3(Web3.HTTPProvider("https://goerli.infura.io/v3/bd1b4d3eed144ebb8f4ea4756f0ba58e"))
