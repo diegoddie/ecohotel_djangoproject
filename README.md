@@ -6,6 +6,8 @@ To achieve this I will use Django, Redis (a NoSQL database) and an Ethereum bloc
 
 The exercise requires to create a web application that shows, in table format, the amount of energy produced and consumed every day by the hotel. At each entry (corresponding to what happens in the previous 24 hours) I will start a transaction on Ethereum Goerli containing the two values in the note field.
 
+For more details take a look to the Project Presentation :) 
+
 ## _🚀 Features implemented_
 
 The features implemented in this project are:
@@ -19,3 +21,7 @@ The features implemented in this project are:
 - Make database migrations
 - Run ```python manage.py runserver```
 - Open http://127.0.0.1:8000/ in your browser
+
+## _🚀 Contacts_
+- Mail: diego.boost@gmail.com
+- @diegoddie_ on Twitter
