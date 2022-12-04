@@ -12,3 +12,10 @@ The features implemented in this project are:
 - A main page, accessible only to logged-in users, showing the table containing the values in question and the hash of the transaction
 - A page, to which only administrators can access, where you can see the total consumed and produced
 - A logging system to store the last IP that had access to the platform for a certain administrator user, so as to display a warning message when this is different from the previous one
+
+## _🚀 How to run this project_
+- Create a Virtual Environment
+- Clone the repo and install requirements in ecohotel/requirements.txt
+- Make database migrations
+- python manage.py runserver
+- open http://127.0.0.1:8000/ in your browser
