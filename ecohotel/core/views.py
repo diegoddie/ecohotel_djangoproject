@@ -53,7 +53,7 @@ def show_totals(request):
     return render (request, 'core/totals.html', context)
 
 @receiver(user_logged_in)
-def get_client_ip(sender, user, request, **kwargs):
+def is_ip_different(sender, user, request, **kwargs):
     different_ip = False
     username = request.user.username
     last_ip = client.get(username)
