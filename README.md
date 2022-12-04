@@ -17,8 +17,5 @@ The features implemented in this project are:
 - Create a Virtual Environment
 - Clone the repo and install requirements in ecohotel/requirements.txt
 - Make database migrations
-- Run 
-```
-python manage.py runserver
-```
+- Run ```python manage.py runserver```
 - Open http://127.0.0.1:8000/ in your browser
